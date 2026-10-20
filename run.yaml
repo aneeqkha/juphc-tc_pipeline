@@ -7,11 +7,11 @@ spec:
     name: tax-calculator-pipeline
   params:
     - name: repo-url
-      value: https://github.com/aneeqkha/zntwk-tax_calculator.git
+      value: https://github.com/aneeqkha/juphc-tc_pipeline.git
     - name: branch
       value: main
     - name: image-url
-      value: icr.io/<namespace>/tax-calculator:pipeline
+      value: us.icr.io/sn-labs-aneeqkhan110/tax-calculator:pipeline
   workspaces:
     - name: output
       persistentVolumeClaim:
