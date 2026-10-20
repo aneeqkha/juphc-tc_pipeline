@@ -1,0 +1,45 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 305B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/nginx:latest
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 157B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/nginx:latest@sha256:bc4cad49969aaf95eb4eecec5572846f86e59f1e8332aba36ed64b91aff8b724
+#5 resolve docker.io/library/nginx:latest@sha256:bc4cad49969aaf95eb4eecec5572846f86e59f1e8332aba36ed64b91aff8b724 0.0s done
+#5 CACHED
+
+#6 [2/6] COPY favicon.ico /usr/share/nginx/html/favicon.ico
+#6 DONE 0.0s
+
+#7 [3/6] COPY index.html /usr/share/nginx/html/index.html
+#7 DONE 0.0s
+
+#8 [4/6] COPY script.js /usr/share/nginx/html/script.js
+#8 DONE 0.0s
+
+#9 [5/6] COPY style.css /usr/share/nginx/html/style.css
+#9 DONE 0.0s
+
+#10 [6/6] COPY taxCalculator.js /usr/share/nginx/html/taxCalculator.js
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers 0.1s done
+#11 exporting manifest sha256:9de8820a24fc6f56655f11d15a0cb246839a36d2ae5a7a34b4f2da6567fe095e done
+#11 exporting config sha256:ae46a031f9d9433f1a7b39c3581ee3cef219b3805dbd03a48a783c94552c9c4e done
+#11 exporting attestation manifest sha256:ba4d710f0c231fdd06e76c9097f7fd681906f6fbb53221802d58a503cf756f5b done
+#11 exporting manifest list sha256:6fdee37a1a65d970ac7a8a884499697de3f0b74a24ba36ca21f3ff99bc512bfe done
+#11 naming to docker.io/library/tax-calculator:latest done
+#11 unpacking to docker.io/library/tax-calculator:latest 0.0s done
+#11 DONE 0.2s

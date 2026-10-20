@@ -1,0 +1,18 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: tax-calculator-run-
+spec:
+  pipelineRef:
+    name: tax-calculator-pipeline
+  params:
+    - name: repo-url
+      value: https://github.com/aneeqkha/zntwk-tax_calculator.git
+    - name: branch
+      value: main
+    - name: image-url
+      value: icr.io/<namespace>/tax-calculator:pipeline
+  workspaces:
+    - name: output
+      persistentVolumeClaim:
+        claimName: tax-calculator-pvc
